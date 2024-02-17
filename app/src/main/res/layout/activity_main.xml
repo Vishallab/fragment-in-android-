@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<!--    ba hum iska dynamic way dkehte h-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/btnFrag1"
+            android:text="Frag 1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+                        android:id="@+id/btnFrag2"
+            android:text="Frag 2"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnFrag3"
+            android:text="Frag 3"/>
+
+
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container"/>
+
+
+
+<!--    yaha pr humne static trike se mtlb ki pehle se predifine ki bhai is part me ye fragment load hoga
+ usme dusrna trike se fragment load kia h to jb
+screen load hogi to yaha pr auto matic dono fragment dikh ajyega-->
+
+<!--    single fragment ko load krne k liye to normal fragment bhi kam kr rha h pr jb multiplr fragment
+ko load krna replace krvana to us time  frame layeout kam kr ta h -->
+    <!--
+    <fragment
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:name="com.example.fragmentdemo.Fragment1"
+        android:id="@+id/frag1"
+        />
+        -->
+
+<!--    ab jo h ki fragment ment mujhe dikahna h kis fragment me kon sa dikhana h to ye id se nhi hota
+gragment me name nam i properties hoti h use use kr ke name nhi uska path dete h hum -->
+    <!--
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:name="com.example.fragmentdemo.Fragment_2"
+        android:id="@+id/frag2"
+        />
+
+-->
+
+
+
+</LinearLayout>
